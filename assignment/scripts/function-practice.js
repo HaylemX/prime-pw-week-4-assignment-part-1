@@ -18,7 +18,8 @@ function helloName( name ) {
   return 'Vince';
 }
 // Remember to call the function to test
-console.log('Test - "Hello"', helloName())
+console.log('Hello, ', helloName())
+
 
 
 // 3. Function to add two numbers together & return the result
