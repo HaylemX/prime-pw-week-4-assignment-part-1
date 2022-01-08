@@ -23,9 +23,16 @@ console.log('Hello, ', helloName())
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
-  // return firstNumber + secondNumber;
+
+
+function addNumber( firstNumber, secondNumber) {
+  let answer = firstNumber + secondNumber;
+    return answer
 }
+
+console.log('Adding two numbers 2,3 = ', addNumber(2, 3));
+
+
 
 
 // 4. Function to multiply three numbers & return the result
