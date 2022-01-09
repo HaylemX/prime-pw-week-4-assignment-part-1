@@ -77,8 +77,8 @@ function getLast( lastItem ) {
 
 
   let numbers = [1,2,3,4];
-function find( value, array ){
-  let myValue = 4;
+function find(myValue){
+  myValue = 1;
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] === myValue) {
       return true
@@ -87,7 +87,7 @@ function find( value, array ){
     }
   }
 }
-console.log(myValue(4))
+console.log(find(1))
 
 // ----------------------
 // Stretch Goals
