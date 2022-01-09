@@ -36,18 +36,22 @@ console.log('Adding two numbers 2,3 = ', addNumber(2, 3));
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyNumber( firstNumber, secondNumber, thirdNumber) {
+  let answer = firstNumber * secondNumber * thirdNumber;
+    return answer
 }
+
+console.log('Multiplying three numbers 2,3,4 = ', multiplyNumber(2, 3, 4));
+
 
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
-  }
-    return;
+    return true;
+  } else
+    return false;
 }
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
@@ -58,16 +62,32 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
-function getLast( array ) {
+let animals = ['whale','dog','cat','monkey'];
 
+function getLast( lastItem ) {
+  lastItem = [animals.pop()];
+  return lastItem
 }
+  console.log(getLast());
+
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-function find( value, array ){
 
+
+  let numbers = [1,2,3,4];
+function find( value, array ){
+  let myValue = 4;
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] === myValue) {
+      return true
+    } else {
+      return false
+    }
+  }
 }
+console.log(myValue(4))
 
 // ----------------------
 // Stretch Goals
