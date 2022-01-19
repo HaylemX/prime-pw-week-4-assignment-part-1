@@ -19,6 +19,7 @@ function helloName( name ) {
 }
 // Remember to call the function to test
 console.log(helloName('Vince'));
+console.log(helloName('Jake'));
 
 
 
@@ -64,10 +65,11 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 //    array is empty, return `undefined`.
 let animals = ['whale','dog','cat','monkey'];
 
-function getLast( lastItem ) {
+function getLast() {
   lastItem = [animals.pop()];
   return lastItem
 }
+
   console.log(getLast());
 
 
@@ -77,7 +79,7 @@ function getLast( lastItem ) {
 
 
 let numbers = [1,2,3,4];
-function find(myValue){
+function find(){
   myValue = 1;
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] === myValue) {
@@ -118,7 +120,7 @@ let sum = arrayList.reduce(function (previousValue, currentValue) {
 }, 0 );
 
 
-console.log("SUM: ", sum);
+console.log("Sum of Array List = ", sum);
 
 
 
@@ -127,6 +129,44 @@ console.log("SUM: ", sum);
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+
+/*
+newArray = [-2,0,3,8,6,9];
+
+function findPositive(positives) {
+  positives = (newArray[i] > 0)
+  for (let i=0; i < newArray.length; i++) {
+    if (newArray[i] > 0) {
+      return findPositive(newArray())
+    }
+  }
+}
+console.log(findPositive());
+
+
+*/
+
+newArray = [-2,0,3,8,6,9];
+function SummPositive( numbers ) {
+  var negatives = [];
+  var sum = 0;
+
+  for(var i = 0; i < numbers.length; i++) {
+    if(numbers[i] > 0) {
+      negatives.push(numbers[i]);
+    }else{
+      sum += numbers[i];
+    }
+  }
+
+  console.log(negatives);
+
+  return sum;
+}
+
+var sum_result = SummPositive( newArray );
+
+
 
 
 
